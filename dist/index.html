@@ -10,6 +10,14 @@
     <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKMAAACjCAMAAADRsl6yAAAAM1BMVEVAAAAHJVQHJVUHJlMHJlQHJlUIJlQHJ1QHJ1UIJ1QzlP80lP8ylf8zlf80lf8zlv80lv+kX2KfAAAAAXRSTlMAQObYZgAAAhRJREFUeNrt29tuwjAQhOEUBtpSBvr+T1tVlSpxSHBs8P6JNpdw4U876wOOGIZ8ah+bL1wC0Xwh3Gi80cshmi/kGvlEm2608UbjjV4g0Xwhzmi80Uslmi8kGflEm2608UbjjV480XwhwGi80esgmi+MNRpvNJ54MN5o041eGdF8YYjReKPXSDRf2NtovNF4oo03Gm/0qonmCzsZjTd6/UTzha83lhjOA94YfqVXFCTcCLgaLZoN6CnDuGEuGjzW+F00dqzxUDIyNeoBb6yYV7FEonHeHWRE1JVLaE/jQDOWDcgyXnwpYtSXQm2BZbwiihf1tVC8qG+JNOMdoXaoqId7RFY73hX+G0+AqC8+2evGCGjHkSJK75SoR4WcdpwgQqKeEhKNY0SOURoznihGjRshRIlu1CQRYdS08RhPlB4Y48s4TtxAjNLDMkYbVWCMJUp4Yxkx0ijRjW8qNYYRHwujj+CfBcTgqKUZxpCrUWmWMaKMwhs1l9jfKNHLKNGNH7OIIfdlUk0ZexqlOiOZ2N2oamI3o+qN5z5GqcFIJvY0qo3Yw6hG4+vPZVKr8dVl3DYQO73HlNrLuAQjmZjGbMeMeq1RT5/LTq3EfbZjtmNG3c24yXZ8pvGY7Zir4+9zyDLmRtjT+JVRNxF32Y7PNB6yHbMd//6Zmz8T0og5gp+zjHkuy5UnN8LcCLMdc3Vkv02oc/0Ahohg8GFznigAAAAASUVORK5CYII=" type="image/x-icon" />
     <title>Razorpay - UI Clone</title>
 
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
     
 
     <style>
@@ -20,6 +28,10 @@
       }
 
       .ctaSection {
+        background-size: 100% 100%;
+      }
+
+      .featureSection {
         background-size: 100% 100%;
       }
 
@@ -82,7 +94,7 @@
         box-shadow: 2px 4px 9px 1px hsla(0, 0%, 0%, 0.05);
       }
     </style>
-    <link rel="stylesheet" href="/assets/index-73b499e6.css">
+    <link rel="stylesheet" href="/assets/index-4a434aad.css">
   </head>
 
   <body>
@@ -1594,7 +1606,7 @@
                 alt=""
                 width="35px"
                 height="40px"
-                class="-mb-2"
+                class="mb-2"
                 loading="lazy"
               />
               <p class="font-mullish text-3xl font-extralight">
@@ -1635,6 +1647,76 @@
         </div>
       </section>
       <!-- Testimonial Section End -->
+
+      <!--CTA Section Start-->
+      <section
+        class="bg-[url(/images/CTABg.svg)] w-full h-full bg-no-repeat bg-cover relative ctaSection min-h-[510px]"
+      >
+        <!--main content box start-->
+        <div
+          class="w-11/12 max-w-[1080px] relative flex flex-row items-center mx-auto justify-between space-x-20 pt-16"
+        >
+          <!--left part start-->
+          <div class="flex flex-col gap-5 mt-12 max-w-[600px]">
+            <h2 class="font-mullish font-bold text-2xl text-white">
+              Supercharge your business with Razorpay
+            </h2>
+            <div class="w-6 h-1 bg-greenLight"></div>
+            <p class="font-mullish text-white">
+              Sign up now to experience the future of payments and offer <br />
+              your customers the best checkout experience.
+            </p>
+
+            <ul class="flex flex-row flex-wrap gap-x-11 text-white gap-y-3">
+              <li class="font-mullish text-white flex flex-row">
+                <i data-feather="check" class="text-greenLight"></i>
+                <span>Quick Onboarding </span>
+              </li>
+              <li class="font-mullish text-white flex flex-row">
+                <i data-feather="check" class="text-greenLight"></i>
+                <span>Access to entire product suite </span>
+              </li>
+              <li class="font-mullish text-white flex flex-row">
+                <i data-feather="check" class="text-greenLight"></i>
+                <span>API access </span>
+              </li>
+              <li class="font-mullish text-white flex flex-row">
+                <i data-feather="check" class="text-greenLight"></i>
+                <span>24x7 support </span>
+              </li>
+            </ul>
+
+            <button
+              class="min-w-[32px] font-mullish text-sm font-bold bg-white text-lightBlue300 border flex rounded-sm items-center hover:text-lightBlue500 transition-all duration-200 py-3 px-4 place-self-start"
+            >
+              Sign Up
+              <svg
+                viewBox="0 0 24 24"
+                focusable="false"
+                class="w-[14px] h-[14px] ml-3"
+              >
+                <path
+                  fill="currentColor"
+                  d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <!--left part end-->
+
+          <!--right side image start-->
+          <img
+            src="/assets/ctaImg-e340b144.svg"
+            alt=""
+            width="240px"
+            height="282px"
+            class="mt-16 pt-3"
+          />
+          <!--right side image start-->
+        </div>
+        <!--main content box end-->
+      </section>
+      <!--CTA Section End-->
     </div>
     <!-- Main Wrapper -->
 
