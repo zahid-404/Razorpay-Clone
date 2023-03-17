@@ -45,14 +45,20 @@
       }
 
       .ctaSection {
-        background-size: 100% 100%;
+        min-height: 880px;
       }
-      @media (max-width:768px) {
-        .ctaSection {
+     
+        .ctaBg {
           background-size: 200% 100%;
-          min-height: 880px;
         }
-      }
+    @media (min-width:1024px) {
+      .ctaBg {
+          background-size: 100% 100%;
+        }
+      .ctaSection {
+          min-height: 529px;
+        }
+    }
 
       .featureSection {
         background-size: 100% 100%;
@@ -117,7 +123,7 @@
         box-shadow: 2px 4px 9px 1px hsla(0, 0%, 0%, 0.05);
       }
     </style>
-    <link rel="stylesheet" href="/assets/index-45fe3b75.css">
+    <link rel="stylesheet" href="/assets/index-40cea647.css">
   </head>
 
   <body>
@@ -1825,45 +1831,96 @@
       <!-- Testimonial Section End -->
 
       <!--CTA Section Start-->
-      <section
-        class="bg-[url(/images/CTABg.svg)] w-full h-full bg-no-repeat bg-center relative ctaSection min-h-[510px]"
-      >
-        <!--main content box start-->
+      <section class="ctaSection relative flex items-center z-[100]">
         <div
-          class="w-10/12 md:w-11/12 h-full max-w-[1080px] relative flex items-center mx-auto justify-between space-x-20 pt-[12.5rem] md:pt-[17rem] lg:pt-16 my-10 md:my-0"
+          class="bg-[url(/images/CTABg.svg)] ctaBg bg-center w-full h-full absolute -z-[1]"
+        ></div>
+        <div
+          class="w-10/12 my-10 md:my-0 md:w-11/12 max-w-[1080px] h-full mx-auto relative flex items-center space-x-20 justify-between"
         >
-          <!--left part start-->
-          <div class="flex flex-col gap-5 mt-12 max-w-[600px]">
-            <h2 class="font-mullish font-bold text-2xl text-white">
+          <div>
+            <h2
+              class="font-mullish font-extrabold text-2xl text-left text-white"
+            >
               Supercharge your business with Razorpay
             </h2>
-            <div class="w-6 h-1 bg-greenLight"></div>
-            <p class="font-mullish text-white">
-              Sign up now to experience the future of payments and offer <br />
-              your customers the best checkout experience.
+            <div class="w-6 h-1 bg-greenLight my-4"></div>
+            <p class="font-mullish text-white max-w-[440px]">
+              Sign up now to experience the future of payments and offer your
+              customers the best checkout experience.
             </p>
-
-            <ul class="flex flex-row flex-wrap gap-x-11 text-white gap-y-3">
-              <li class="font-mullish text-white flex flex-row">
-                <i data-feather="check" class="text-greenLight"></i>
-                <span>Quick Onboarding </span>
+            <ul class="space-y-2 flex flex-wrap text-white my-8">
+              <li class="font-mullish flex items-center gap-x-2 mr-12">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-check text-greenLight"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Quick Onboarding</span>
               </li>
-              <li class="font-mullish text-white flex flex-row">
-                <i data-feather="check" class="text-greenLight"></i>
+              <li class="font-mullish flex items-center gap-x-2 mr-12">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-check text-greenLight"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
                 <span>Access to entire product suite </span>
               </li>
-              <li class="font-mullish text-white flex flex-row">
-                <i data-feather="check" class="text-greenLight"></i>
-                <span>API access </span>
+              <li class="font-mullish flex items-center gap-x-2 mr-12">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-check text-greenLight"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>API access</span>
               </li>
-              <li class="font-mullish text-white flex flex-row">
-                <i data-feather="check" class="text-greenLight"></i>
-                <span>24x7 support </span>
+              <li class="font-mullish flex items-center gap-x-2 mr-12">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-check text-greenLight"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>24x7 support</span>
               </li>
             </ul>
-
             <button
-              class="min-w-[32px] font-mullish text-sm font-bold bg-white text-lightBlue300 border flex rounded-sm items-center hover:text-lightBlue500 transition-all duration-200 py-3 px-4 place-self-start"
+              class="py-3 px-4 min-w-[32px] font-mullish text-sm font-bold bg-white text-lightBlue300 border flex rounded-sm items-center hover:text-lightBlue500 transition-all duration-200"
             >
               Sign Up
               <svg
@@ -1878,19 +1935,14 @@
               </svg>
             </button>
           </div>
-          <!--left part end-->
-
-          <!--right side image start-->
           <img
             src="/assets/ctaImg-e340b144.svg"
-            alt=""
             width="240px"
             height="282px"
-            class="hidden lg:block mt-16 pt-3"
+            loading="lazy"
+            class="hidden lg:block"
           />
-          <!--right side image start-->
         </div>
-        <!--main content box end-->
       </section>
       <!--CTA Section End-->
     </div>
